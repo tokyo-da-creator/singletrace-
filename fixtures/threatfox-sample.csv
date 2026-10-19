@@ -1,0 +1,7 @@
+################################################################
+# SIMULATED ThreatFox-shaped fixture. Not a live export.
+# Last updated: 2026-01-15 12:00:00 UTC
+# first_seen_utc, ioc_id, ioc_value, ioc_type, threat_type, fk_malware, malware_alias, malware_printable, last_seen_utc, confidence_level, is_compromised, reference, tags, anonymous, reporter
+"2026-01-15 12:00:00", "900001", "203.0.113.10:443", "ip:port", "botnet_cc", "win.mirai", "None", "Mirai", "2026-01-15 13:00:00", "75", "False", "https://threatfox.abuse.ch/ioc/900001/", "mirai", "0", "fixture"
+"2026-01-15 12:05:00", "900002", "malware.example", "domain", "payload_delivery", "None", "None", "None", "None", "50", "None", "https://threatfox.abuse.ch/ioc/900002/", "None", "1", "fixture"
+"2026-01-15 12:06:00", "900003", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "sha256_hash", "payload", "None", "None", "None", "None", "None", "None", "None", "None", "1", "fixture"

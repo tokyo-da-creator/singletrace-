@@ -1,0 +1,21 @@
+{
+  "title": "SIMULATED CISA KEV fixture",
+  "catalogVersion": "2099.01.01",
+  "dateReleased": "2099-01-01T00:00:00.000Z",
+  "count": 1,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2099-0001",
+      "vendorProject": "Example",
+      "product": "Widget",
+      "vulnerabilityName": "Example widget flaw",
+      "dateAdded": "2099-01-01",
+      "shortDescription": "Simulated catalog entry for tests.",
+      "requiredAction": "Apply the vendor update.",
+      "dueDate": "2099-02-01",
+      "knownRansomwareCampaignUse": "Unknown",
+      "notes": "",
+      "cwes": ["CWE-79"]
+    }
+  ]
+}

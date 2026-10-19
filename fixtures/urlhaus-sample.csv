@@ -1,0 +1,5 @@
+################################################################
+# SIMULATED URLhaus-shaped fixture. Not a live export.
+# Last updated: 2026-01-16 08:00:00 UTC
+# id,dateadded,url,url_status,last_online,threat,tags,urlhaus_link,reporter
+"800001","2026-01-16 08:00:00","http://malware.example/sample","online","2026-01-16 08:00:00","malware_download","elf,mirai","https://urlhaus.abuse.ch/url/800001/","fixture"

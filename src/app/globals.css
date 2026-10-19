@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #090909;
+  --color-panel: #141414;
+  --color-raise: #1a1a1a;
+  --color-line: #292929;
+  --color-line-strong: #343434;
+  --color-ink: #eeeeee;
+  --color-muted: #929292;
+  --color-accent: #e10600;
+  --color-amber: #c4841d;
+  --color-good: #3d9a6a;
+  --color-info: #4c7cb8;
+  --font-sans: var(--font-plex-sans), "Segoe UI", sans-serif;
+  --font-mono: var(--font-plex-mono), "Cascadia Mono", Consolas, ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #090909;
+    color: #eeeeee;
+    font-family: var(--font-plex-sans), "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  select,
+  input[type="text"],
+  input[type="search"],
+  input[type="date"] {
+    background: #141414;
+    color: #eeeeee;
+    border: 1px solid #343434;
+    border-radius: 0;
+    font: inherit;
+    font-size: 12px;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  select,
+  input[type="text"],
+  input[type="search"],
+  input[type="date"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 8px;
+  }
+
+  @media (min-width: 640px) {
+    select,
+    input[type="text"],
+    input[type="search"],
+    input[type="date"] {
+      width: auto;
+    }
+  }
+
+  button:hover,
+  select:hover,
+  input:hover {
+    border-color: #e10600;
+  }
+
+  :focus-visible {
+    outline: 1px solid #e10600;
+    outline-offset: 2px;
+  }
+
+  ::placeholder {
+    color: #5c5c5c;
+  }
+
+  ::selection {
+    background: #e10600;
+    color: #ffffff;
+  }
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  z-index: 20;
+  background: #eeeeee;
+  color: #111111;
+  padding: 6px 10px;
+}
+
+.skip:focus {
+  top: 8px;
+}
+
+.hatch {
+  background-color: #141414;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #141414,
+    #141414 2px,
+    #3a2a14 2px,
+    #3a2a14 3px
+  );
+}
+
+.tip {
+  position: fixed;
+  z-index: 30;
+  max-width: 280px;
+  border: 1px solid #343434;
+  background: #090909;
+  padding: 8px 10px;
+  pointer-events: none;
+}
+
+.maplibregl-popup-content {
+  background: #141414 !important;
+  color: #eeeeee !important;
+  border: 1px solid #343434;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 8px 10px !important;
+}
+
+.maplibregl-popup-tip {
+  display: none;
+}
+
+.maplibregl-ctrl-attrib {
+  background: transparent !important;
+  color: #929292 !important;
+  font-size: 10px !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #929292 !important;
+}
+
+.map-shell .maplibregl-map {
+  font-family: inherit;
+}
